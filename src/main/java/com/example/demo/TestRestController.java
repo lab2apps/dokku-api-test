@@ -19,4 +19,10 @@ public class TestRestController {
     public String lol(){
         return dbUrl;
     }
+
+    @GetMapping("/kek")
+    public String kek(){
+//        return jdbcTemplate.queryForObject("SELECT service_name FROM event_processing_job_record LIMIT 1;", String.class);
+        return "LOL";
+    }
 }
